@@ -4,3 +4,4 @@
 
 ### 顾诗宇
 
+java运行在服务端，然后运行webstrom中的index.html即可
