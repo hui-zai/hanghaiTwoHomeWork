@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+    <style>
+        ol li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    请输入：<input v-model="msg">
+    <hr>
+    同步输出：{{msg}}
+    <hr>
+    <h3>用户列表</h3>
+    <ol>
+        <li v-for="user in list">
+            {{user.id}}&nbsp;&nbsp;{{user.username}}&nbsp;&nbsp;{{user.email}}&nbsp;&nbsp;{{user.sex}}&nbsp;&nbsp;{{user.province}}&nbsp;&nbsp;{{user.hobby.join( '|' )}}<br>
+        </li>
+    </ol>
+</div>
+<script>
+    var app = new Vue({
+        el:"#app",
+        data:{
+            msg:'张三',
+            list: [
+                {
+                    id: 1,
+                    username: 'aaaaa',
+                    email: '123@qq.com',
+                    sex: '男',
+                    province: '北京市',
+                    hobby: ['篮球', '读书', '编程']
+                },
+                {
+                    id: 2,
+                    username: 'bbbbb',
+                    email: 'bbbbbbb@163.com',
+                    sex: '女',
+                    province: '河北省',
+                    hobby: ['弹琴', '读书', '插画']
+                },
+                {
+                    id: 3,
+                    username: 'aaabb',
+                    email: 'abababab@qq.com',
+                    sex: '女',
+                    province: '重庆市',
+                    hobby: ['篮球']
+                },
+                {
+                    id: 4,
+                    username: 'cccccc',
+                    email: '123@qq.com',
+                    sex: '男',
+                    province: '北京市',
+                    hobby: ['篮球', '读书', '编程']
+                },
+                {
+                    id: 5,
+                    username: 'dddddd',
+                    email: 'bbbbbbb@163.com',
+                    sex: '女',
+                    province: '河北省',
+                    hobby: ['弹琴', '读书', '插画']
+                },
+                {
+                    id: 6,
+                    username: 'eeeee',
+                    email: 'abababab@qq.com',
+                    sex: '女',
+                    province: '重庆市',
+                    hobby: ['篮球']
+                }
+            ]
+        }
+    });
+</script>
+</body>
+</html>
