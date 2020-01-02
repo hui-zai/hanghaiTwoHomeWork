@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7b576688-0cd0-44d8-a7f0-2214819828af" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1VVwAjp0T1lBqr9KvJlX3BiHexe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.last.introduce.type" value="LET" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\webstrom" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\webstrom" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:8080">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b576688-0cd0-44d8-a7f0-2214819828af" name="Default Changelist" comment="" />
+      <created>1577351428126</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577351428126</updated>
+      <workItem from="1577351429511" duration="1632000" />
+      <workItem from="1577426918946" duration="5602000" />
+      <workItem from="1577496327878" duration="20246000" />
+      <workItem from="1577589077511" duration="13841000" />
+      <workItem from="1577666423239" duration="9047000" />
+      <workItem from="1577693846918" duration="883000" />
+      <workItem from="1577954842815" duration="424000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="634" y="220" key="FileChooserDialogImpl" timestamp="1577610341974">
+      <screen x="0" y="0" width="1707" height="929" />
+    </state>
+    <state x="634" y="220" key="FileChooserDialogImpl/0.0.1707.929/2560.0.1280.689@0.0.1707.929" timestamp="1577610341974" />
+    <state x="217" y="0" key="SettingsEditor" timestamp="1577501764388">
+      <screen x="0" y="0" width="1707" height="929" />
+    </state>
+    <state x="217" y="0" key="SettingsEditor/0.0.1707.929/2560.0.1280.689@0.0.1707.929" timestamp="1577501764388" />
+    <state x="329" y="217" width="721" height="502" key="dock-window-1" timestamp="1577667528870">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="329" y="217" width="721" height="502" key="dock-window-1/0.0.1280.689@0.0.1280.689" timestamp="1577667528870" />
+    <state x="-23" y="117" width="961" height="676" maximized="true" key="dock-window-1/0.0.1707.929/2560.0.1280.689@0.0.1707.929" timestamp="1577609815207" />
+    <state x="231" y="103" width="961" height="676" maximized="true" key="dock-window-1/0.0.1707.929/2560.0.1280.689@2560.0.1280.689" timestamp="1577589657895" />
+    <state x="2553" y="-7" width="1387" height="916" maximized="true" key="dock-window-2" timestamp="1577675730111">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="2553" y="-7" width="1387" height="916" maximized="true" key="dock-window-2/0.0.1707.929/2560.0.1280.689@0.0.1707.929" timestamp="1577608439852" />
+    <state x="511" y="213" key="run.anything.popup" timestamp="1577602408923">
+      <screen x="0" y="0" width="1707" height="929" />
+    </state>
+    <state x="511" y="213" key="run.anything.popup/0.0.1707.929/2560.0.1280.689@0.0.1707.929" timestamp="1577602408923" />
+    <state x="510" y="213" key="run.anything.popup/0.0.1707.929/2560.0.1280.689@2560.0.1280.689" timestamp="1577540807154" />
+    <state x="516" y="198" width="672" height="678" key="search.everywhere.popup" timestamp="1577606932417">
+      <screen x="0" y="0" width="1707" height="929" />
+    </state>
+    <state x="516" y="198" width="672" height="678" key="search.everywhere.popup/0.0.1707.929/2560.0.1280.689@0.0.1707.929" timestamp="1577606932417" />
+  </component>
+</project>
