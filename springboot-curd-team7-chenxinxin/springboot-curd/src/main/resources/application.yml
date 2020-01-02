@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///curdcase?serverTimezone=UTC&characterEncoding=utf-8
+    username: root
+    password: yostar
+
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
