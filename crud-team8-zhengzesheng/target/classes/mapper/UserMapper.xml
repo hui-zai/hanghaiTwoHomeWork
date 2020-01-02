@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zzs.crud.dao.UserMapper">
+    <insert id="save">
+        insert into user values(null,#{username},#{email},#{sex},#{province},#{hobby})
+    </insert>
+    <update id="update">
+        update user set username=#{username},email=#{email},sex=#{sex},province=#{province},
+                        hobby=#{hobby} where id = #{id}
+    </update>
+
+
+    <select id="getAll" resultType="com.zzs.crud.entity.User">
+        select * from user
+    </select>
+
+    <delete id="del" parameterType="integer">
+        delete from user where id = #{id}
+    </delete>
+</mapper>
