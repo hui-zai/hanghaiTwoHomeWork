@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: vuecrud
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/crudvue?serverTimezone=UTC
+    username: root
+    password: root
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: UTF-8
+mybatis:
+  type-aliases-package: com.lx.vuecrud.model
+  mapper-locations: classpath*:mapper/**/*.xml
+
