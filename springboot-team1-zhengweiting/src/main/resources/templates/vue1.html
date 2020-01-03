@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+    <script src="jquery-3.4.1.js"></script>
+</head>
+<body>
+<div id="app">
+
+
+    <div>
+        <h3>用户列表</h3>
+
+
+    <table>
+        <tr v-cloak v-for="item in slist">
+            <td>{{item.id}}</td>
+            <td>{{item.username}}</td>
+            <td>{{item.email}}</td>
+            <td>{{item.sex}}</td>
+            <td>{{item.province}}</td>
+            <td>{{item.hobby.join(' | ')}}</td>
+            <td><a href="javascript:;" @click="showOverlay(index)">修改</a> | <a href="javascript:;" @click="del(item.id)">删除</a></td>
+        </tr>
+
+
+
+    </table>
+    </div>
+    <model :list="selectedlist":isactive="isActive" v-cloak @change="changeOverlay" @modify="modify"></model>
+    Vue.component('model',{
+        props:['list','isactive'],
+    template:'<div class="overlay" v-show="isactive">\n'
+
+
+    })
+
+
+</div>
+
+<script>
+
+    var app = new Vue({
+        el:"#app",
+        data:{
+
+            isActive:false,
+            selected:-1,
+            selectedlist:{},
+            searchedlist:{},
+
+            slist: [],
+            searchlist:[],
+
+            list:[
+                {
+                    id:1,
+                    username:'aaa',
+                    email:'123@qq.com',
+                    sex:'男',
+                    province:'北京',
+                    hobby:['篮球','读书']
+
+                }
+            ]
+
+
+        },
+        created(){
+
+
+
+
+            this.slist = this.list;
+        }
+    });
+</script>
+
+
+
+</body>
+</html>
