@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 页面meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="../plugins/elementui/index.css">
+    <link rel="stylesheet" href="../plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="hold-transition">
+<div id="app">
+    <div class="content-header">
+        <h1>用户管理</h1>
+    </div>
+    <div class="app-container">
+        <div class="box">
+            <div class="filter-container">
+                <el-input placeholder="用户名" style="width: 200px;" v-model="searchKey" class="filter-item"></el-input>
+                <el-button @click="goSearch()" class="dalfBut">查询</el-button>
+                <el-button type="primary" @click="dialogFormVisible=true" class="butT">新建</el-button>
+            </div>
+            <el-table
+                    :data="tableData"
+                    style="width: 100%">
+                <el-table-column
+                        prop="id"
+                        label="编号"
+                        width="180">
+                </el-table-column>
+                <el-table-column
+                        prop="username"
+                        label="用户名"
+                        width="180">
+                </el-table-column>
+                <el-table-column
+                        prop="email"
+                        label="邮件地址">
+                </el-table-column>
+                <el-table-column
+                        prop="sex"
+                        label="性别">
+                </el-table-column>
+                <el-table-column
+                        prop="province"
+                        label="省份">
+                </el-table-column>
+                <el-table-column
+                        prop="hobby"
+                        label="兴趣">
+                </el-table-column>
+
+                <el-table-column label="操作">
+                    <template slot-scope="scope">
+                        <el-button
+                                size="mini"
+                                @click="edit(scope.row.id)">编辑</el-button>
+                        <el-button
+                                size="mini"
+                                type="danger"
+                                @click="del(scope.row.id)">删除</el-button>
+                    </template>
+                </el-table-column>
+            </el-table>
+
+
+            <el-dialog title="收货地址" :visible.sync="dialogFormVisible">
+                <el-form label-width="120px">
+                    <el-form-item label="用户名">
+                        <el-input v-model="entity.username" autocomplete="off"></el-input>
+                    </el-form-item>
+                    <el-form-item label="邮件地址">
+                        <el-input v-model="entity.email" autocomplete="off"></el-input>
+                    </el-form-item>
+
+                    <el-form-item label="性别">
+                        <el-radio v-model="entity.sex" label="男">男</el-radio>
+                        <el-radio v-model="entity.sex" label="女">女</el-radio>
+                    </el-form-item>
+
+                    <el-form-item label="兴趣">
+                        <el-checkbox-group v-model="checkList">
+                            <el-checkbox label="篮球"></el-checkbox>
+                            <el-checkbox label="读书"></el-checkbox>
+                            <el-checkbox label="插画"></el-checkbox>
+                            <el-checkbox label="钢琴"></el-checkbox>
+                        </el-checkbox-group>
+                    </el-form-item>
+                    <el-form-item label="省份">
+                        <el-select v-model="entity.province" placeholder="请选择省份">
+                            <el-option label="广东省" value="广东省"></el-option>
+                            <el-option label="台湾省" value="台湾省"></el-option>
+                        </el-select>
+                    </el-form-item>
+                </el-form>
+                <div slot="footer" class="dialog-footer">
+                    <el-button @click="dialogFormVisible = false">取 消</el-button>
+                    <el-button type="primary" @click="save()">确 定</el-button>
+                </div>
+
+            </el-dialog>
+        </div>
+    </div>
+</div>
+</body>
+<!-- 引入组件库 -->
+<script src="../js/vue.js"></script>
+<script src="../plugins/elementui/index.js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script src="../js/axios-0.18.0.js"></script>
+<script>
+    var vue = new Vue({
+        el: '#app',
+        data() {
+            return {
+                tableData: [],
+                searchKey: "",
+                dialogFormVisible: false,
+                entity: {},
+                checkList:[]
+            }
+        },
+        //钩子函数，VUE对象初始化完成后自动执行
+        created() {
+            this.query();
+        },
+        methods: {
+            query() {
+                axios.get("/user/query").then(response => {
+                    this.tableData = response.data;
+                });
+            },
+            goSearch() {
+                axios.get(`/user/findByUsername?username=${this.searchKey}`).then(response => {
+                    this.tableData = response.data;
+                })
+            },
+            save(){
+                this.entity.hobby = this.checkList.join(',');
+                let method='update';
+                if(this.entity.id==null){
+                    method = 'save';
+                }
+                axios.post(`/user/${method}`,this.entity).then(response=>{
+                    if(response.data.code=='200'){
+                        this.$message({
+                            message: '操作成功',
+                            type: 'success'
+                        });
+                        this.query();
+                        this.dialogFormVisible = false ;
+                    }
+                })
+            },
+            edit(id){
+                axios.get(`/user/findOne?id=${id}`).then(response=>{
+                    if(response.data!=null){
+                        this.entity = response.data;
+                        this.checkList = this.entity.hobby.split(',');
+                        this.dialogFormVisible =true;
+                    }
+                })
+            }
+            ,
+            del(id){
+                axios.get(`/user/del?id=${id}`).then(response=>{
+                    if(response.data.code=='200'){
+                        this.$message({
+                            message: '操作成功',
+                            type: 'success'
+                        });
+                        this.query();
+                        this.dialogFormVisible = false ;
+                    }
+                })
+            }
+        }
+    })
+</script>
+</html>
