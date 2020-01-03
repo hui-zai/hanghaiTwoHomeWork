@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>菜谱-豆果美食</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/caipu.css">
+	<script type="text/javascript">
+		function $(id) {
+		return document.getElementById(id);
+		}
+		//导航条的发布的二级菜单显示和关闭
+		function show(){
+			$("issueall").style.display = "block";
+		}
+		function hide(){
+			$("issueall").style.display = "none";
+		}
+	</script>
+</head>
+<body>
+	<div class="public-header">
+		<div class="header-title public-container clearfloat">
+			<div class="header-title-logo">
+				<a href=""></a>
+			</div>
+			<div class="header-title-login">
+				<div class="login-way clearfloat">
+					<a class="qq" href="">QQ登录</a>
+					<a class="sina" href="">新浪微博</a>
+				</div>
+				<div class="login clearfloat">
+					<a class="login-type" href="login.html" target="_blank">登录</a>
+					<span class="login-line">|</span>
+					<a class="login-type" href="registration.html" target="_blank">注册</a>
+					<span class="login-line">|</span>
+					<a class="login-type" href="https://www.douguo.com/page/download/" target="_blank">下载客户端</a>
+				</div> 
+			</div>
+		</div>
+		<div class="header-nav">
+			<div class="header-nav-center public-container clearfloat">
+				<div class="nav-item ">
+					<ul >
+						<li class="item nav-line"><a href="index.html">首页</a></li>
+						<li class="item nav-line"><a href="caipu.html"><span class="item-span">菜谱</span></a></li>
+						<li class="item nav-line"><a href="yanxuan.html">严选</a></li>
+						<li class="item nav-line"><a href="huodong.html">活动</a></li>
+                        <li class="item nav-line"><a href="#">主题</a></li>
+                        <li class="item"><a href="#">动漫</a></li>
+					</ul>
+				</div>	
+				<div class="nav-search">
+					<form>
+						<input type="text" name="search-text" class="nav-search-text" placeholder="搜索菜单、菜谱、食材、用户">
+						<input type="submit" name="search-submit" class="nav-search-submit" value="">
+					</form>
+				</div>
+				<div class="nav-issue" onmouseover="show()" onmouseout="hide()">
+					<a href="" class="nav-btniss">发布</a>
+					<div class="nav-issue-rt3" id="issueall" style="display: none;">
+						<span class="armtop"> </span>
+						<p>
+							<a href="" class="rt3">发布菜谱</a>
+					   		<a href="">创建菜单</a>
+					   		<a href="">上传美食日记</a>
+	                    </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="caipu-content public-container clearfloat">
+		<div class="ul-content pages">
+			<ul class=""> 
+			    <li class="caipu-content-item">
+			      	<a href="../黄惠燕_15210536_豆果美食网站/caipuDetail.html">
+			        	<div class="item-img ">
+			          		<img src="img/caipu-1.jpeg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			        		<div class="item-img1 ">
+				          		<img src="img/caipu-1.jpeg" alt="">
+				        	</div>
+			          		<div class="brief">
+			            		<h3>番茄土豆烧牛肉</h3>
+			            		<div class="quote">
+			              			<p>141836浏览 · 5109收藏 · 6已学做</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="caipu-content-item">
+			      	<a href="../黄惠燕_15210536_豆果美食网站/caipuDetail.html">
+			        	<div class="item-img ">
+			          		<img src="img/caipu-2.jpeg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			        		<div class="item-img1 ">
+				          		<img src="img/caipu-2.jpeg" alt="">
+				        	</div>
+			          		<div class="brief">
+			            		<h3>圣诞小魔怪和奇异星球卡通包</h3>
+			            		<div class="quote">
+			              			<p>108939浏览 · 4596收藏 · 11已学做</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="caipu-content-item">
+			      	<a href="../黄惠燕_15210536_豆果美食网站/caipuDetail.html">
+			        	<div class="item-img ">
+			          		<img src="img/caipu-3.jpeg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			        		<div class="item-img1 ">
+				          		<img src="img/caipu-3.jpeg" alt="">
+				        	</div>
+			          		<div class="brief">
+			            		<h3>萝胡生蒜火莜面</h3>
+			            		<div class="quote">
+			              			<p>88180浏览 · 3958收藏 · 7已学做</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="caipu-content-item">
+			      	<a href="../黄惠燕_15210536_豆果美食网站/caipuDetail.html">
+			        	<div class="item-img ">
+			          		<img src="img/caipu-4.jpeg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			        		<div class="item-img1 ">
+				          		<img src="img/caipu-4.jpeg" alt="">
+				        	</div>
+			          		<div class="brief">
+			            		<h3>番茄金针菇豆腐汤</h3>
+			            		<div class="quote">
+			              			<p>56154浏览 · 2910收藏 · 8已学做</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="caipu-content-item">
+			      	<a href="../黄惠燕_15210536_豆果美食网站/caipuDetail.html">
+			        	<div class="item-img ">
+			          		<img src="img/caipu-5.jpeg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			        		<div class="item-img1 ">
+				          		<img src="img/caipu-5.jpeg" alt="">
+				        	</div>
+			          		<div class="brief">
+			            		<h3>圣诞雪人卡通包系列(一)</h3>
+			            		<div class="quote">
+			              			<p>104273浏览 · 4476收藏 · 8已学做</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="caipu-content-item">
+			      	<a href="../黄惠燕_15210536_豆果美食网站/caipuDetail.html">
+			        	<div class="item-img ">
+			          		<img src="img/caipu-6.jpeg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			        		<div class="item-img1 ">
+				          		<img src="img/caipu-6.jpeg" alt="">
+				        	</div>
+			          		<div class="brief">
+			            		<h3>蒜蓉粉丝蒸金针菇——快手下饭就靠它</h3>
+			            		<div class="quote">
+			              			<p>71047浏览 · 4766收藏 · 8已学做</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="caipu-content-item">
+			      	<a href="../黄惠燕_15210536_豆果美食网站/caipuDetail.html">
+			        	<div class="item-img ">
+			          		<img src="img/caipu-7.jpeg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			        		<div class="item-img1 ">
+				          		<img src="img/caipu-7.jpeg" alt="">
+				        	</div>
+			          		<div class="brief">
+			            		<h3>冬季养生必备红枣蛋糕</h3>
+			            		<div class="quote">
+			              			<p>53686浏览 · 2574收藏 · 6已学做</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="caipu-content-item">
+			      	<a href="../黄惠燕_15210536_豆果美食网站/caipuDetail.html">
+			        	<div class="item-img ">
+			          		<img src="img/caipu-8.jpeg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			        		<div class="item-img1 ">
+				          		<img src="img/caipu-8.jpeg" alt="">
+				        	</div>
+			          		<div class="brief">
+			            		<h3>下饭菜……荷兰豆炒虾仁</h3>
+			            		<div class="quote">
+			              			<p>52922浏览 · 2507收藏 · 6已学做</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="caipu-content-item">
+			      	<a href="../黄惠燕_15210536_豆果美食网站/caipuDetail.html">
+			        	<div class="item-img ">
+			          		<img src="img/caipu-9.jpeg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			        		<div class="item-img1 ">
+				          		<img src="img/caipu-9.jpeg" alt="">
+				        	</div>
+			          		<div class="brief">
+			            		<h3>糟卤鱼片耳三胡</h3>
+			            		<div class="quote">
+			              			<p>49039浏览 · 2046收藏 · 6已学做</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="caipu-content-item">
+			      	<a href="../黄惠燕_15210536_豆果美食网站/caipuDetail.html">
+			        	<div class="item-img ">
+			          		<img src="img/caipu-10.jpeg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			        		<div class="item-img1 ">
+				          		<img src="img/caipu-10.jpeg" alt="">
+				        	</div>
+			          		<div class="brief">
+			            		<h3>比肉还香的——浇汁豆腐丸子</h3>
+			            		<div class="quote">
+			              			<p>53857浏览 · 3424收藏 · 6已学做</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="caipu-content-item">
+			      	<a href="../黄惠燕_15210536_豆果美食网站/caipuDetail.html">
+			        	<div class="item-img ">
+			          		<img src="img/caipu-11.jpeg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			        		<div class="item-img1 ">
+				          		<img src="img/caipu-11.jpeg" alt="">
+				        	</div>
+			          		<div class="brief">
+			            		<h3>家常秘制黄焖鸡，超极下饭</h3>
+			            		<div class="quote">
+			              			<p>59724浏览 · 4073收藏 · 7已学做</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="caipu-content-item">
+			      	<a href="../黄惠燕_15210536_豆果美食网站/caipuDetail.html">
+			        	<div class="item-img ">
+			          		<img src="img/caipu-12.jpeg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			        		<div class="item-img1 ">
+				          		<img src="img/caipu-12.jpeg" alt="">
+				        	</div>
+			          		<div class="brief">
+			            		<h3>网红雪花酥</h3>
+			            		<div class="quote">
+			              			<p>93846浏览 · 4416收藏 · 6已学做</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="caipu-content-item">
+			      	<a href="../黄惠燕_15210536_豆果美食网站/caipuDetail.html">
+			        	<div class="item-img ">
+			          		<img src="img/caipu-13.jpeg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			        		<div class="item-img1 ">
+				          		<img src="img/caipu-13.jpeg" alt="">
+				        	</div>
+			          		<div class="brief">
+			            		<h3>伊比利亚火腿糯米卷#风味人间#</h3>
+			            		<div class="quote">
+			              			<p>102937浏览 · 4602收藏 · 7已学做</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="caipu-content-item">
+			      	<a href="../黄惠燕_15210536_豆果美食网站/caipuDetail.html">
+			        	<div class="item-img ">
+			          		<img src="img/caipu-14.jpeg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			        		<div class="item-img1 ">
+				          		<img src="img/caipu-14.jpeg" alt="">
+				        	</div>
+			          		<div class="brief">
+			            		<h3>肉沫豆腐抱蛋</h3>
+			            		<div class="quote">
+			              			<p>58377浏览 · 3297收藏 · 6已学做</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			</ul>
+		</div>
+	</div>
+	<div class="dots-group" id="dotsgroup">
+		<a href="#" class="dots-page">第一页</a>
+       	<a href="#" class="dots on">1</a>
+       	<a href="#" class="dots">2</a>
+       	<a href="#" class="dots">3</a>
+       	<a href="#" class="dots">4</a>
+       	<a href="#" class="dots">5</a>
+       	<a href="#" class="dots-page">最后一页</a>
+    </div>
+	<div class="public-footer">
+		<div class="public-container">
+			<div class="footer-col">
+				<p>元旦礼品推荐<br>圣诞大礼包<br>冬至团团圆圆<br>
+					<a href="tel:718-749-1714">订购热线...</a>
+				</p>
+			</div>
+			<div class="footer-col">
+				<p>食品安全介绍<br>好物推荐<br>猜你喜欢<br>加入我们...</p>
+			</div>
+			<div class="footer-col">
+            	<div class="footer-info">©2009-2018</br>计科165-黄惠燕<br>201615210536</div>              
+			</div>
+			<div class="footer-col">
+				<img src="img/1.PNG" width="150px"/>
+			</div>
+		</div>
+	</div>
+    <div class="footer-tip" align="center">
+        	此网站仿照“豆果美食”官网，尊重版权。
+    </div>
+</body>
+</html>

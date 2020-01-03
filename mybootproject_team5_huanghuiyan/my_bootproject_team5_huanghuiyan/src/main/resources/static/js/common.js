@@ -1,0 +1,144 @@
+window.onload = function(){
+	function $(id) {
+		return document.getElementById(id);
+	}
+	var dots1 = $("dotsgroup").getElementsByTagName('a');
+	var pages = document.getElementsByClassName('pages');
+	var index1 = 0;
+
+	function pagesChange() {
+		
+		for (var i = 1; i < dots1.length-1; i++) {
+			pages[i-1].style.display = "none";
+			dots1[i].className = "dots";
+		}	
+		pages[index1-1].style.display = "block";
+		dots1[index1].className = "dots on";
+	}
+
+	for (var i = 0; i < dots1.length; i++) {
+		dots1[i].id = i;
+		if (i == 0) {
+			dots1[i].onclick = function(){
+				index1 = 1;
+				pagesChange();
+			}
+		}
+		else if(i == 6){
+			dots1[i].onclick = function(){
+				index1 = 5;
+				pagesChange();
+			}
+		}
+		else{
+			dots1[i].onclick = function(){
+				index1 = parseInt(this.id);
+				pagesChange();
+			}
+		}
+	}
+
+
+	var dots = $("banner-dots-ul").getElementsByTagName('li');
+	var index = 1;
+	var animated = false; //判断是否完成动画
+	var interval = 3000; //设置自动轮播间隔时间
+	var timer;
+
+	//轮播图点击圆点改变样式
+	function showdots() {
+		for (var i = 0; i < dots.length; i++) {
+			if(dots[i].className == "on"){
+				dots[i].className = "";
+				break;
+			}
+		}
+		dots[index-1].className = "on";
+	}
+
+	//自动轮播和鼠标控制停止
+	function play() {
+        timer = setInterval(function () {
+            next.onclick();
+        }, interval);
+    }
+    function stop() {
+        clearInterval(timer);
+    }
+
+	//轮播图切换图片
+	function animate(offset) {
+		if (offset == 0) { return; }
+		animated = true;
+		var time = 300; //设置移动的总时间
+		var inteval = 10; //设置移动的时间间隔
+		var speed = offset/(time/inteval); //每次移动的偏移量
+		var newleft = parseInt($('banner-body-ul').style.left) + offset;
+
+		var go = function(){
+			if ( (speed > 0 && parseInt($('banner-body-ul').style.left) < newleft) || (speed < 0 && parseInt($('banner-body-ul').style.left) > newleft)) {
+                $('banner-body-ul').style.left = parseInt($('banner-body-ul').style.left) + speed + 'px';
+                setTimeout(go, inteval);
+            }
+            else {
+                $('banner-body-ul').style.left = newleft + "px";
+				if (newleft > -700) {
+					$('banner-body-ul').style.left = -3500 + "px";
+				}
+				if (newleft < -3500) {
+					$('banner-body-ul').style.left = -700 + "px";
+				}
+                animated = false;
+            }
+        }
+        go();	
+	}
+
+	//箭头控制图片移动
+	$('next').onclick = function(){
+		if (animated) {
+			return;
+		}
+        if (index == 1) {
+            index = 5;
+        }
+        else {
+            index -= 1;
+        }
+		showdots();
+		animate(-700);
+	}
+	$("prev").onclick = function(){
+		if (animated) {
+			return;
+		}
+        if (index == 1) {
+            index = 5;
+        }
+        else {
+            index -= 1;
+        }
+		showdots();
+		animate(700);
+	}
+
+	//为每个点添加点击事件
+	for (var i = 0; i < dots.length; i++) {
+        dots[i].onclick = function () {
+        	if (animated) {
+				return;
+			}
+            if(this.className == 'on') {
+                return;
+            }
+            var myIndex = parseInt(this.getAttribute('index')); //获取自定义属性值
+            var offset = -700 * (myIndex - index);
+            animate(offset);
+            index = myIndex;
+            showdots();
+        }
+    }
+    $("banner-body").onmouseover = stop;
+    $("banner-body").onmouseout = play;
+    play();
+}

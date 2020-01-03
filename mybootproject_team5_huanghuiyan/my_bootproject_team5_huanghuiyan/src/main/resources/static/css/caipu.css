@@ -1,0 +1,58 @@
+
+.caipu-content{
+	position: relative;
+	margin-top: 30px;
+}
+.caipu-content .ul-content{
+	width: 940px;
+	height: 2450px;
+}
+.ul-content .caipu-content-item{
+	width: 400px;
+	height: 300px;
+	float: left;
+	margin: 25px 25px;
+	background: #fff;
+}
+.caipu-content-item .item-img{
+	width: 400px;
+	height: 200px;
+	overflow: hidden;
+}
+.caipu-content-item .item-details{
+	position: relative;
+	width: 400px;
+}
+.caipu-content-item .item-details .item-img1{
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	right: 30px;
+	top: -20px;
+	z-index: 999;
+	display: block;
+}
+.item-img1 img{
+	display: block;
+	width: 70px;
+	height: 70px;
+	border-radius: 50px; 
+}
+.item-details .brief{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.brief h3{
+	font-size: 16px;
+	font-weight: bold;
+	color: #cc3366;
+}
+.brief .quote{
+	margin-top: 20px;
+}
+.quote p{
+	font-weight: normal;
+	font-size: 14px;
+	color: #999;
+}

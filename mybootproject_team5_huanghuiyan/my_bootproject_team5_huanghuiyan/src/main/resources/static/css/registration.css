@@ -1,0 +1,166 @@
+
+.register-header{
+	width: 100%;
+	margin-bottom: 40px;
+	background-color: #ffcccc;
+	border-bottom: 1px solid #ffccff;
+}
+.register-header .header-content{
+	height: 90px;
+}
+.register-header .header-content .content-logo{
+	float: left;
+	width: 180px;
+	height: 54px;
+	background: url("../img/title-logo.png") no-repeat 0 -44px;
+	line-height: 10em;
+	overflow: hidden;
+	margin-top: 20px;
+	margin-left: 15px;
+}
+.register-content{
+	height: 600px;
+	background: #ffcccc
+}
+.register-content .register-content-header{
+	height: 58px;
+	border-bottom: 2px solid #ffccff;
+	position: relative;
+}
+.register-content-header h2{
+	font-weight: normal;
+	font-size: 30px;
+	width: 200px;
+	position: absolute;
+	left: 32px;
+	line-height: 58px;
+	color: #cc3366;
+}
+.register-content-header span{
+	font-size: 16px;
+	width: 300px;
+	position: absolute;
+	right: 18px;
+	line-height: 58px;
+	display: block;
+	text-align: right;
+}
+.register-content-input{
+	width: 610px;
+	float: left;
+	margin: 30px 0px 0px 320px;
+}
+.register-content-input .input-infor{
+	width: 640px;
+	height: 45px;
+	margin-bottom: 25px;
+}
+.input-infor .info{
+	float: left;
+	color: #999;
+	width: 312px;
+	height: 45px;
+}
+.input-infor .info input{
+	width: 300px;
+	height: 28px;
+	line-height: 28px;
+	vertical-align: middle;
+	padding: 5px 0px 5px 10px;
+	font-size: 14px;
+	border: 1px solid #ffcccc;
+	border-radius: 5px;
+	background: #fff;
+}
+.input-infor .tip{
+	width: 200px;
+	height: 32px;
+	line-height: 32px;
+	margin-top: 4px;
+	display: inline-block;
+	color: #f00;
+	margin-left: 20px;
+}
+.register-content-input .input-register{
+	margin-top: 10px;
+	height: 82px;
+	width: 610px;
+}
+.input-register .register-xieyi{
+	display: block;
+	color: #999;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.register-xieyi a{
+	display: inline-block;
+}
+.input-register .btn-register{
+	width: 310px;
+	height: 42px;
+	background: #ec7309;
+	color: #fff;
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 42px;
+	font-size: 14px;
+	border: none;
+	border-radius: 5px;
+}
+.register-content-input .input-otherway{
+	width: 310px;
+	padding-bottom: 30px;
+}
+.register-content-input .input-otherway h3{
+	color: #cc3366;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 20px 0px 15px 0px;
+}
+.register-content-input .input-otherway ul{
+	width: 310px;
+	border-top: 2px dotted #ffccff;
+}
+.input-otherway ul li{
+	width: 310px;
+	border-bottom: 2px dotted #ffccff;
+	height: 40px;
+}
+.input-otherway ul li a{
+	width: 76px;
+	line-height: 40px;
+	display: inline-block;
+}
+.input-otherway ul li .sina, .input-otherway ul li .email{
+	margin-left: 36px;
+}
+.input-otherway ul li a .input-otherway-qq, .input-otherway ul li a .input-otherway-sina, .input-otherway ul li a .input-otherway-email{
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	margin-right: 5px;
+	margin-bottom: 3px;
+	vertical-align: middle;
+	background: url("../img/loicon.png") no-repeat;
+
+}
+.input-otherway ul li a .input-otherway-qq{
+	background-position: -3px -47px;
+}
+.input-otherway ul li a .input-otherway-sina{
+	background-position: -32px -47px;
+}
+.input-otherway ul li a .input-otherway-email{
+	background-position: -64px -21px;
+}
+.success{
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	margin-right: 5px;
+	margin-bottom: 3px;
+	vertical-align: middle;
+	background: url("../img/loicon.png") no-repeat;
+	background-position: -2px -21px;
+}
