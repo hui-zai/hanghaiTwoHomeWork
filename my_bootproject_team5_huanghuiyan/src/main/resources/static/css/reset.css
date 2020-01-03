@@ -1,0 +1,39 @@
+/*重置默认属性值*/
+body, div, a, p, ul, li, ol, dt, dd, tr, td, form, h1, h2, h3, h4, h5, input{
+	padding: 0px;
+	margin: 0px;
+	font-family: "Helvetica Neue", Helvetica, Arical, sans-serif;
+}
+
+body{
+	background-color: #ffccff;
+	font-size: 12px;
+	overflow-x: hidden;
+}
+
+ul, li, ol{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	display: block;
+	color: #CC3366;
+}
+
+img{
+	border: none;
+	display: block;
+}
+
+.clearfloat{
+	zoom: 1;
+}
+
+.clearfloat:after{
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0;
+}

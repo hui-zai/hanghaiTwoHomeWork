@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>活动-豆果美食</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/huodong.css">
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+		function $(id) {
+		return document.getElementById(id);
+		}
+		//导航条的发布的二级菜单显示和关闭
+		function show(){
+			$("issueall").style.display = "block";
+		}
+		function hide(){
+			$("issueall").style.display = "none";
+		}
+	</script>
+</head>
+<body>
+	<div class="public-header">
+		<div class="header-title public-container clearfloat">
+			<div class="header-title-logo">
+				<a href=""></a>
+			</div>
+			<div class="header-title-login">
+				<div class="login-way clearfloat">
+					<a class="qq" href="">QQ登录</a>
+					<a class="sina" href="">新浪微博</a>
+				</div>
+				<div class="login clearfloat">
+					<a class="login-type" href="login.html" target="_blank">登录</a>
+					<span class="login-line">|</span>
+					<a class="login-type" href="registration.html" target="_blank">注册</a>
+					<span class="login-line">|</span>
+					<a class="login-type" href="https://www.douguo.com/page/download/" target="_blank">下载客户端</a>
+				</div> 
+			</div>
+		</div>
+		<div class="header-nav">
+			<div class="header-nav-center public-container clearfloat">
+				<div class="nav-item ">
+					<ul >
+						<li class="item nav-line"><a href="index.html">首页</a></li>
+						<li class="item nav-line"><a href="caipu.html">菜谱</a></li>
+						<li class="item nav-line"><a href="yanxuan.html">严选</a></li>
+						<li class="item nav-line"><a href="huodong.html"><span class="item-span">活动</span></a></li>
+                        <li class="item nav-line"><a href="#">主题</a></li>
+                        <li class="item"><a href="#">动漫</a></li>
+					</ul>
+				</div>	
+				<div class="nav-search">
+					<form>
+						<input type="text" name="search-text" class="nav-search-text" placeholder ="搜索菜单、菜谱、食材、用户">
+						<input type="submit" name="search-submit" class="nav-search-submit" value="">
+					</form>
+				</div>
+				<div class="nav-issue" onmouseover="show()" onmouseout="hide()">
+					<a href="" class="nav-btniss">发布</a>
+					<div class="nav-issue-rt3" id="issueall" style="display: none;">
+						<span class="armtop"> </span>
+						<p>
+							<a href="" class="rt3">发布菜谱</a>
+					   		<a href="">创建菜单</a>
+					   		<a href="">上传美食日记</a>
+	                    </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="index-banner public-container" style="margin-top: 60px;">
+		<div class="index-banner-main">
+			<div class="banner-dots">
+                <a class="next" id="next"></a>
+               	<ul id="banner-dots-ul">
+                	<li index="1" class="on">1</li>
+                	<li index="2" class="">2</li>
+                	<li index="3" class="">3</li>
+                	<li index="4" class="">4</li>
+                	<li index="5" class="">5</li>
+                </ul>
+                <a class="prev" id="prev"></a>
+            </div>
+			<div class="banner-body" id="banner-body">
+				<ul id="banner-body-ul" style="left: -700px">
+					<li style="float: left; width: 700px;">
+						<a href="" target="_blank">
+							<img width="700" height="220" src="img/index-banner-1.jpg">
+						</a>
+					</li>
+					<li style="float: left; width: 700px;">
+						<a href="" target="_blank">
+							<img width="700" height="220" src="img/index-banner-2.jpg">
+						</a>
+					</li>
+					<li style="float: left; width: 700px;">
+						<a href="" target="_blank">
+							<img width="700" height="220" src="img/index-banner-1.jpg">
+						</a>
+					</li>
+					<li style="float: left; width: 700px;">
+						<a href="" target="_blank">
+							<img width="700" height="220" src="img/index-banner-3.jpg">
+						</a>
+					</li>
+					<li style="float: left; width: 700px;">
+						<a href="" target="_blank">
+							<img width="700" height="220" src="img/index-banner-2.jpg">
+						</a>
+					</li>
+					<li style="float: left; width: 700px;">
+						<a href="" target="_blank">
+							<img width="700" height="220" src="img/index-banner-1.jpg">
+						</a>
+					</li>
+					<li style="float: left; width: 700px;">
+						<a href="" target="_blank">
+							<img width="700" height="220" src="img/index-banner-2.jpg">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="huodong-content public-container clearfloat">
+		<div class="huodong-content-left pages">
+			<ul class=""> 
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-1.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>新年新招乐过年</h3>
+			            		<div class="quote">
+			              			<p>时间：2018年02月09日 - 2018年02月</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-2.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>文艺吃货最爱的竹木火锅</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年12月08日 - 2017年12月31日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-3.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>利仁加湿器拯救干燥</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年12月01日 - 2017年12月30日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-4.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>柏翠辅食节与你一起呵呵宝宝的健康！</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年11月30日 - 2018年01月12日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-5.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>浓汤宝火锅英雄争霸赛</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年11月15日 - 2017年12月11日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-6.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>利仁电饼铛全线升级！</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年11月09日 - 2017年12月01日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-7.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>法国乐禧瑞蛋黄酱食谱决赛</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年09月11日 - 2017年11月20日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-8.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>全能腌肉伴侣家乐鸡粉等你拿！</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年08月10日 - 2017年09月05日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			</ul>
+		</div>
+		<div class="huodong-content-left pages alwHidden">
+			<ul class=""> 
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-1.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>新年新招乐过年</h3>
+			            		<div class="quote">
+			              			<p>时间：2018年02月09日 - 2018年02月</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-2.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>文艺吃货最爱的竹木火锅</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年12月08日 - 2017年12月31日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-3.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>利仁加湿器拯救干燥</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年12月01日 - 2017年12月30日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-4.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>柏翠辅食节与你一起呵呵宝宝的健康！</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年11月30日 - 2018年01月12日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-5.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>浓汤宝火锅英雄争霸赛</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年11月15日 - 2017年12月11日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-6.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>利仁电饼铛全线升级！</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年11月09日 - 2017年12月01日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-7.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>法国乐禧瑞蛋黄酱食谱决赛</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年09月11日 - 2017年11月20日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-8.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>全能腌肉伴侣家乐鸡粉等你拿！</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年08月10日 - 2017年09月05日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			</ul>
+		</div>
+		<div class="huodong-content-left pages alwHidden">
+			<ul class=""> 
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-1.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>新年新招乐过年</h3>
+			            		<div class="quote">
+			              			<p>时间：2018年02月09日 - 2018年02月</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-2.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>文艺吃货最爱的竹木火锅</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年12月08日 - 2017年12月31日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-3.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>利仁加湿器拯救干燥</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年12月01日 - 2017年12月30日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-4.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<<h3>柏翠辅食节与你一起呵呵宝宝的健康！</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年11月30日 - 2018年01月12日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-5.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>浓汤宝火锅英雄争霸赛</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年11月15日 - 2017年12月11日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-6.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>利仁电饼铛全线升级！</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年11月09日 - 2017年12月01日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-7.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>法国乐禧瑞蛋黄酱食谱决赛</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年09月11日 - 2017年11月20日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-8.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>全能腌肉伴侣家乐鸡粉等你拿！</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年08月10日 - 2017年09月05日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			</ul>
+		</div>
+		<div class="huodong-content-left pages alwHidden">
+			<ul class=""> 
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-1.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>新年新招乐过年</h3>
+			            		<div class="quote">
+			              			<p>时间：2018年02月09日 - 2018年02月</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-2.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>文艺吃货最爱的竹木火锅</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年12月08日 - 2017年12月31日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-3.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>利仁加湿器拯救干燥</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年12月01日 - 2017年12月30日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-4.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>柏翠辅食节与你一起呵呵宝宝的健康！</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年11月30日 - 2018年01月12日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-5.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>浓汤宝火锅英雄争霸赛</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年11月15日 - 2017年12月11日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-6.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>利仁电饼铛全线升级！</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年11月09日 - 2017年12月01日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-7.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>法国乐禧瑞蛋黄酱食谱决赛</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年09月11日 - 2017年11月20日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-8.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>全能腌肉伴侣家乐鸡粉等你拿！</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年08月10日 - 2017年09月05日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			</ul>
+		</div>
+		<div class="huodong-content-left pages alwHidden">
+			<ul class=""> 
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-1.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>新年新招乐过年</h3>
+			            		<div class="quote">
+			              			<p>时间：2018年02月09日 - 2018年02月</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-2.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>文艺吃货最爱的竹木火锅</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年12月08日 - 2017年12月31日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-3.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>利仁加湿器拯救干燥</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年12月01日 - 2017年12月30日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-4.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>柏翠辅食节与你一起呵呵宝宝的健康！</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年11月30日 - 2018年01月12日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-5.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>浓汤宝火锅英雄争霸赛</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年11月15日 - 2017年12月11日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-6.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>利仁电饼铛全线升级！</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年11月09日 - 2017年12月01日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-7.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>法国乐禧瑞蛋黄酱食谱决赛</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年09月11日 - 2017年11月20日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			    <li class="huodong-content-item">
+			      	<a href="">
+			        	<div class="item-img">
+			          		<img src="img/active-8.jpg" alt="">
+			        	</div>
+			        	<div class="item-details">
+			          		<div class="brief">
+			            		<h3>全能腌肉伴侣家乐鸡粉等你拿！</h3>
+			            		<div class="quote">
+			              			<p>时间：2017年08月10日 - 2017年09月05日</p>
+			            		</div>
+			          		</div>
+			        	</div>
+			      	</a>
+			    </li>
+			</ul>
+		</div>
+		<div class="huodong-content-right">
+			<div class="guanggao">
+            </br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全部活动：
+					<ul >
+						<li><a href="#">美食体验馆</a></li>
+						<li><a href="#">美食课堂</a></li>
+						<li><a href="#">菜谱征集</a></li>
+						<li><a href="#">其他活动</a></li>
+					</ul>
+			</div>	
+		</div>
+	</div>
+	<div class="dots-group" id="dotsgroup">
+		<a href="#" class="dots-page">第一页</a>
+       	<a href="#" class="dots on">1</a>
+       	<a href="#" class="dots">2</a>
+       	<a href="#" class="dots">3</a>
+       	<a href="#" class="dots">4</a>
+       	<a href="#" class="dots">5</a>
+       	<a href="#" class="dots-page">最后一页</a>
+    </div>
+	<div class="public-footer">
+		<div class="public-container">
+			<div class="footer-col">
+				<p>元旦礼品推荐<br>圣诞大礼包<br>冬至团团圆圆<br>
+					<a href="tel:718-749-1714">订购热线...</a>
+				</p>
+			</div>
+			<div class="footer-col">
+				<p>食品安全介绍<br>好物推荐<br>猜你喜欢<br>加入我们...</p>
+			</div>
+			<div class="footer-col">
+            	<div class="footer-info">©2009-2018</br>计科165-黄惠燕<br>201615210536</div>              
+			</div>
+			<div class="footer-col">
+				<img src="img/1.PNG" width="150px"/>
+			</div>
+		</div>
+	</div>
+	<div class="footer-tip" align="center">
+		此网站仿照“豆果美食”官网，尊重版权。
+	</div>
+</body>
+</html>
