@@ -1,4 +1,4 @@
-package cn.rari.pojo;
+package com.hqc.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

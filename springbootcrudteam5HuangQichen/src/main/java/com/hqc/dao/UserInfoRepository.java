@@ -1,6 +1,6 @@
-package cn.rari.dao;
+package com.hqc.dao;
 
-import cn.rari.pojo.UserInfo;
+import com.hqc.pojo.UserInfo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 

@@ -1,9 +1,9 @@
-package cn.rari.serivce.impl;
+package com.hqc.serivce.impl;
 
 
-import cn.rari.dao.UserInfoRepository;
-import cn.rari.pojo.UserInfo;
-import cn.rari.serivce.UserInfoService;
+import com.hqc.dao.UserInfoRepository;
+import com.hqc.pojo.UserInfo;
+import com.hqc.serivce.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

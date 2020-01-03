@@ -1,6 +1,7 @@
-package cn.rari.serivce;
+package com.hqc.serivce;
 
-import cn.rari.pojo.UserInfo;
+import com.hqc.pojo.UserInfo;
+
 import java.util.List;
 
 public interface UserInfoService {

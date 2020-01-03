@@ -1,8 +1,8 @@
-package cn.rari.controller;
+package com.hqc.controller;
 
-import cn.rari.pojo.ResponseObject;
-import cn.rari.pojo.UserInfo;
-import cn.rari.serivce.UserInfoService;
+import com.hqc.pojo.ResponseObject;
+import com.hqc.pojo.UserInfo;
+import com.hqc.serivce.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
